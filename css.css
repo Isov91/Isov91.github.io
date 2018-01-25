@@ -1,0 +1,269 @@
+body {
+background-image	: url("bilder/bakgrund.png");
+margin				:0px;
+padding				:0;
+
+/*
+* Jag ville få kanten av sidonra 0px så elementer inte sticker ut 
+*/
+}
+
+iframe {
+display: block;
+float:right;
+
+
+}
+
+
+
+
+a {
+
+float				:right;
+font-family:		Russian, Comic Sans;
+font-size			:24px;
+padding				:5px;
+
+
+}
+
+/*
+* a link och ner till hover har jag gjort olika färger för besökare innan och det ser koolt ut.
+*/
+
+a:link {
+color				:blue;
+text-decoration		:none;
+
+}
+
+a:visited {
+color				:red;
+
+
+}
+
+a:hover {
+
+text-decoration		:underline;
+
+
+}
+
+#google, #bild {
+height				:450px;
+width				:780px;
+display				:block;
+margin-left			:auto;
+margin-right		:auto;
+padding-top			:30px;
+
+/*
+* Anpassar huvud elementen, google liknande facen 
+*/
+
+}
+
+
+
+
+
+
+form {
+	
+text-align			:center;
+
+/*
+*  Koden för att få Buttons aligned på center 
+*/
+
+}
+
+
+
+
+
+.sokg {
+
+background-color	:red;
+padding				:10px;
+margin-top			:20px;
+
+/*
+*  Ger lite utsende till sok funkionen 
+*/
+
+}
+
+
+/*
+*  Allt från Focus och ner till hover får en kool utsende på knapparna.
+*/
+
+
+input[class=sok]:focus{
+outline				:none;
+
+
+
+
+}
+
+input[class=lucky]:focus{
+outline				:none;
+
+
+
+
+}
+
+input[class=sok]:hover {
+border				:5px 	white;
+border-style		:inset;	
+color				:white;
+
+
+}
+
+
+
+input[class=lucky]:hover {
+border				:5px 	white;
+border-style		:inset;	
+color				:White;
+
+
+}
+
+
+input[class=sok]{ 
+display				:inline-block;
+width				:200px;
+margin				:5px;
+font-weight			:bold;
+font-family			:Russian, Comic Sans;
+font-size			:20px;
+background-color	:#E40000;
+padding-top			:10px;
+padding-bottom		:10px;
+}
+/*
+*  bestämmer storleken och utsenden på knapparna 
+*/
+
+
+input[class=lucky] { 
+font-weight			:bold;
+display:			inline-block;
+padding-top			:10px;
+padding-bottom		:10px;
+width:200px;
+background-color	:E40000;
+font-size			:20px;
+font-family			:Russian, Comic Sans;
+margin				:5px;
+
+}
+
+footer { 
+
+/*
+* Footer använde jag för att bygga en "hide and close" funktion med script. Footer var kroppen.  
+*/
+
+
+padding				:10px;
+margin-top			:400px;
+height				:160px;
+text-align			:center;
+color				:red;
+font-family			:Comic Sans;
+}
+
+footer button {
+background-color	:red; 
+padding				:5px;
+
+
+}
+
+@media screen and (max-width: 480px) {
+ 
+ /*
+* Mobil anpasningens sida. Behövdes inte stort jobb att göra klart.  
+*/
+
+ 
+body {
+margin				:0;
+padding				:0;
+background-repeat	:none;
+}
+
+a {
+
+
+font-family			:Russian, Comic Sans;
+font-size			:16px;
+padding				:2px;
+
+
+}
+
+
+a:link {
+color				:blue;
+text-decoration		:none;
+
+}
+
+a:visited {
+color				:red;
+
+
+}
+
+a:hover {
+
+text-decoration		:underline;
+
+
+}
+
+#google, #bild {
+	
+/*
+*Ändrade bara max width och fick en mobil anpasning med en kod bara :)  
+*/
+
+	
+height				:250px;
+max-width			:450px;
+display				:block;
+margin-left			:auto;
+margin-right		:auto;
+padding-top			:30px;
+}
+
+button {
+padding				:30px;
+
+
+
+}
+
+a {
+display				:none;
+
+/*
+* Gömde <a> knapparna för mycket jobb att mobil anpassa andra sidan.  
+*/
+
+
+}
+
+ 
+} /*
+* THE END  
+*/
